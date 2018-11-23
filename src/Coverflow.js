@@ -207,7 +207,7 @@ class Coverflow extends Component {
     const { displayQuantityOfSide } = this.props;
     const { width } = this.state;
     const style = {};
-    const baseWidth = width / (displayQuantityOfSide * 2 + 1);
+    const baseWidth = width;
     const length = React.Children.count(this.props.children);
     const offset = length % 2 === 0 ? -width / 10 : 0;
     // Handle opacity
